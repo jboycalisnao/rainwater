@@ -1,5 +1,3 @@
-import tkinter as tk
-from tkinter import ttk, filedialog, messagebox
 import threading
 
 from load_and_clean import load_and_clean
