@@ -34,13 +34,22 @@ def export_results_to_json(
         "metadata": metadata,
         "harvest_summary": {
             "annual_L_per_year": round(harvest_summary["annual_L"], 2),
+            "annual_L_per_year_per_class": round(harvest_summary.get("annual_L_per_class", 0), 2),
             "monthly_L_per_year": {
                 str(k): round(v, 2)
                 for k, v in harvest_summary["monthly_L"].items()
             },
+            "monthly_L_per_year_per_class": {
+                str(k): round(v, 2)
+                for k, v in harvest_summary.get("monthly_L_per_class", {}).items()
+            },
             "weekly_L_per_year": {
                 str(k): round(v, 2)
                 for k, v in harvest_summary["weekly_L"].items()
+            },
+            "weekly_L_per_year_per_class": {
+                str(k): round(v, 2)
+                for k, v in harvest_summary.get("weekly_L_per_class", {}).items()
             },
         },
         "tank_reliability": reliability_table.to_dict(orient="records"),

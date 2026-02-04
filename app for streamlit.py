@@ -63,6 +63,27 @@ if run_analysis and raw_df is not None:
             st.write("Monthly Harvest (L):")
             st.write(pd.DataFrame(list(harvest["monthly_L"].items()), columns=["Month", "Liters"]))
 
+            # Per-classroom visualizations
+            st.subheader("Per-classroom Roof Harvest")
+            st.write(f"Annual Harvest per classroom roof: {harvest['annual_L_per_class']:,.0f} L / year")
+
+            # Monthly per-class bar chart
+            monthly_per_class_df = pd.DataFrame(
+                list(harvest.get("monthly_L_per_class", {}).items()),
+                columns=["Month", "Liters"]
+            ).set_index("Month")
+            if not monthly_per_class_df.empty:
+                st.write("Monthly Harvest per classroom (L):")
+                st.bar_chart(monthly_per_class_df)
+
+            # Annual per-class per synthetic year time-series
+            per_year_df = harvest_df.groupby("synthetic_year")["harvest_L_per_class"].sum().reset_index()
+            per_year_df = per_year_df.set_index("synthetic_year")
+            per_year_df.index.name = "Year"
+            if not per_year_df.empty:
+                st.write("Annual Harvest per classroom by synthetic year (L):")
+                st.line_chart(per_year_df)
+
             # Tank Reliability
             daily_demand = cls * studs * demand
             table = build_reliability_table(
