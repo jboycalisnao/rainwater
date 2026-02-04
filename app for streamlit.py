@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import json
 from load_and_clean import load_and_clean
 from wet_dry_classification import classify_wet_dry
 from spell_analysis import extract_spells
@@ -84,21 +85,22 @@ if (
     "harvest_summary" in st.session_state and
     "reliability_table" in st.session_state
 ):
-    if st.button("4. Export Results to JSON"):
-        try:
-            metadata = {
-                "roof_area_per_class_m2": roof,
-                "number_of_classrooms": cls,
-                "students_per_class": studs,
-                "demand_L_per_student_per_day": demand,
-                "simulation_years": int(st.session_state["harvest_df"]["synthetic_year"].nunique()),
-            }
-            json_path = export_results_to_json(
-                output_path=".",
-                metadata=metadata,
-                harvest_summary=st.session_state["harvest_summary"],
-                reliability_table=st.session_state["reliability_table"],
-            )
-            st.success(f"Results exported to: {json_path}")
-        except Exception as e:
-            st.error(f"Export Error: {e}")
+    metadata = {
+        "roof_area_per_class_m2": roof,
+        "number_of_classrooms": cls,
+        "students_per_class": studs,
+        "demand_L_per_student_per_day": demand,
+        "simulation_years": int(st.session_state["harvest_df"]["synthetic_year"].nunique()),
+    }
+    # Prepare JSON data
+    json_data = json.dumps({
+        "metadata": metadata,
+        "harvest_summary": st.session_state["harvest_summary"],
+        "reliability_table": st.session_state["reliability_table"].to_dict(),
+    }, indent=2)
+    st.download_button(
+        label="Download Results as JSON",
+        data=json_data,
+        file_name="rainwater_results.json",
+        mime="application/json"
+    )
