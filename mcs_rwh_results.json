@@ -1,0 +1,324 @@
+{
+  "generated_at": "2026-02-04T10:27:27.452142",
+  "metadata": {
+    "roof_area_per_class_m2": 63.0,
+    "number_of_classrooms": 4,
+    "students_per_class": 40,
+    "demand_L_per_student_per_day": 5.0,
+    "simulation_years": 1
+  },
+  "harvest_summary": {
+    "annual_L_per_year": 394693.4,
+    "monthly_L_per_year": {
+      "1": 8951.41,
+      "2": 16421.83,
+      "3": 20720.87,
+      "4": 14345.51,
+      "5": 38743.86,
+      "6": 92519.84,
+      "7": 36617.34,
+      "8": 44075.18,
+      "9": 20585.58,
+      "10": 31152.86,
+      "11": 29114.12,
+      "12": 41444.99
+    },
+    "weekly_L_per_year": {
+      "1": 0.0,
+      "2": 2338.46,
+      "3": 6612.95,
+      "4": 0.0,
+      "5": 3594.54,
+      "6": 4189.56,
+      "7": 0.0,
+      "8": 8637.73,
+      "9": 831.14,
+      "10": 4036.82,
+      "11": 8240.61,
+      "12": 7612.3,
+      "13": 0.0,
+      "14": 0.0,
+      "15": 0.0,
+      "16": 12809.84,
+      "17": 1535.66,
+      "18": 7992.59,
+      "19": 10364.32,
+      "20": 6632.37,
+      "21": 8620.44,
+      "22": 5134.14,
+      "23": 40951.13,
+      "24": 26148.34,
+      "25": 25420.38,
+      "26": 14654.94,
+      "27": 21962.4,
+      "28": 0.0,
+      "29": 0.0,
+      "30": 0.0,
+      "31": 12163.48,
+      "32": 16625.44,
+      "33": 5354.38,
+      "34": 9931.88,
+      "35": 0.0,
+      "36": 7953.9,
+      "37": 11169.48,
+      "38": 1462.19,
+      "39": 0.0,
+      "40": 0.0,
+      "41": 10217.64,
+      "42": 11335.58,
+      "43": 9599.64,
+      "44": 0.0,
+      "45": 12199.0,
+      "46": 4877.73,
+      "47": 12037.39,
+      "48": 9854.66,
+      "49": 5679.7,
+      "50": 0.0,
+      "51": 1442.8,
+      "52": 24467.83,
+      "53": 0.0
+    }
+  },
+  "tank_reliability": [
+    {
+      "tank_L": 500,
+      "reliability_pct": 0.0
+    },
+    {
+      "tank_L": 1000,
+      "reliability_pct": 30.96
+    },
+    {
+      "tank_L": 1500,
+      "reliability_pct": 33.42
+    },
+    {
+      "tank_L": 2000,
+      "reliability_pct": 43.56
+    },
+    {
+      "tank_L": 2500,
+      "reliability_pct": 49.32
+    },
+    {
+      "tank_L": 3000,
+      "reliability_pct": 49.86
+    },
+    {
+      "tank_L": 3500,
+      "reliability_pct": 55.89
+    },
+    {
+      "tank_L": 4000,
+      "reliability_pct": 60.82
+    },
+    {
+      "tank_L": 4500,
+      "reliability_pct": 61.1
+    },
+    {
+      "tank_L": 5000,
+      "reliability_pct": 64.66
+    },
+    {
+      "tank_L": 5500,
+      "reliability_pct": 65.21
+    },
+    {
+      "tank_L": 6000,
+      "reliability_pct": 67.4
+    },
+    {
+      "tank_L": 6500,
+      "reliability_pct": 69.59
+    },
+    {
+      "tank_L": 7000,
+      "reliability_pct": 69.59
+    },
+    {
+      "tank_L": 7500,
+      "reliability_pct": 71.78
+    },
+    {
+      "tank_L": 8000,
+      "reliability_pct": 73.7
+    },
+    {
+      "tank_L": 8500,
+      "reliability_pct": 73.97
+    },
+    {
+      "tank_L": 9000,
+      "reliability_pct": 76.16
+    },
+    {
+      "tank_L": 9500,
+      "reliability_pct": 76.71
+    },
+    {
+      "tank_L": 10000,
+      "reliability_pct": 78.36
+    },
+    {
+      "tank_L": 10500,
+      "reliability_pct": 79.73
+    },
+    {
+      "tank_L": 11000,
+      "reliability_pct": 79.73
+    },
+    {
+      "tank_L": 11500,
+      "reliability_pct": 81.1
+    },
+    {
+      "tank_L": 12000,
+      "reliability_pct": 82.19
+    },
+    {
+      "tank_L": 12500,
+      "reliability_pct": 82.47
+    },
+    {
+      "tank_L": 13000,
+      "reliability_pct": 83.56
+    },
+    {
+      "tank_L": 13500,
+      "reliability_pct": 83.84
+    },
+    {
+      "tank_L": 14000,
+      "reliability_pct": 84.66
+    },
+    {
+      "tank_L": 14500,
+      "reliability_pct": 85.75
+    },
+    {
+      "tank_L": 15000,
+      "reliability_pct": 85.75
+    },
+    {
+      "tank_L": 15500,
+      "reliability_pct": 86.58
+    },
+    {
+      "tank_L": 16000,
+      "reliability_pct": 87.12
+    },
+    {
+      "tank_L": 16500,
+      "reliability_pct": 87.4
+    },
+    {
+      "tank_L": 17000,
+      "reliability_pct": 88.22
+    },
+    {
+      "tank_L": 17500,
+      "reliability_pct": 88.49
+    },
+    {
+      "tank_L": 18000,
+      "reliability_pct": 89.32
+    },
+    {
+      "tank_L": 18500,
+      "reliability_pct": 90.14
+    },
+    {
+      "tank_L": 19000,
+      "reliability_pct": 90.14
+    },
+    {
+      "tank_L": 19500,
+      "reliability_pct": 90.96
+    },
+    {
+      "tank_L": 20000,
+      "reliability_pct": 91.23
+    },
+    {
+      "tank_L": 20500,
+      "reliability_pct": 91.78
+    },
+    {
+      "tank_L": 21000,
+      "reliability_pct": 92.6
+    },
+    {
+      "tank_L": 21500,
+      "reliability_pct": 92.6
+    },
+    {
+      "tank_L": 22000,
+      "reliability_pct": 92.88
+    },
+    {
+      "tank_L": 22500,
+      "reliability_pct": 93.15
+    },
+    {
+      "tank_L": 23000,
+      "reliability_pct": 93.42
+    },
+    {
+      "tank_L": 23500,
+      "reliability_pct": 93.7
+    },
+    {
+      "tank_L": 24000,
+      "reliability_pct": 93.7
+    },
+    {
+      "tank_L": 24500,
+      "reliability_pct": 94.52
+    },
+    {
+      "tank_L": 25000,
+      "reliability_pct": 94.79
+    },
+    {
+      "tank_L": 25500,
+      "reliability_pct": 94.79
+    },
+    {
+      "tank_L": 26000,
+      "reliability_pct": 95.07
+    },
+    {
+      "tank_L": 26500,
+      "reliability_pct": 95.07
+    },
+    {
+      "tank_L": 27000,
+      "reliability_pct": 95.34
+    },
+    {
+      "tank_L": 27500,
+      "reliability_pct": 95.62
+    },
+    {
+      "tank_L": 28000,
+      "reliability_pct": 95.62
+    },
+    {
+      "tank_L": 28500,
+      "reliability_pct": 96.16
+    },
+    {
+      "tank_L": 29000,
+      "reliability_pct": 96.16
+    },
+    {
+      "tank_L": 29500,
+      "reliability_pct": 96.44
+    },
+    {
+      "tank_L": 30000,
+      "reliability_pct": 96.71
+    }
+  ]
+}
